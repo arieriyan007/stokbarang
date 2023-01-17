@@ -26,6 +26,16 @@ include "koneksi.php";
                                     <div class="card-header"><h3 class="text-center font-weight-light my-2">Login</h3>
                                     <p class="text-muted text-center">Sistem Informasi Stok Barang</p>
                                 </div>
+
+                                <?php 
+                                if (isset($_GET['pesan']=="")) {
+                                    if ($_GET['pesan']=="logout") {
+                                        echo "<div class='alert alert-info text-center' role='alert'>Anda telah Logout</div>"; 
+                                    }
+                                }
+
+                                ?>
+
                                     <div class="card-body">
                                         <form method="post" action="aksi_login.php">
                                             <div class="form-floating mb-3">
