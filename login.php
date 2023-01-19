@@ -28,9 +28,9 @@ include "koneksi.php";
                                 </div>
 
                                 <?php 
-                                if (isset($_GET['pesan']=="")) {
+                                if (isset($_GET['pesan'])) {
                                     if ($_GET['pesan']=="logout") {
-                                        echo "<div class='alert alert-info text-center' role='alert'>Anda telah Logout</div>"; 
+                                        echo "<div class='alert alert-info text-center my-2' role='alert'><b>Anda telah Logout</b></div>"; 
                                     }
                                 }
 

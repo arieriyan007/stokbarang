@@ -14,7 +14,7 @@ if ($hitung > 0) {
     $_SESSION['email']      = $email;
     $_SESSION['status']     = "berhasil";
 
-    header("location:admin/index.php?status=login");
+    header("location:admin/index.php?pesan=login");
 } else {
     header("location:login.php?status=gagal");
 }

@@ -6,7 +6,15 @@ include '../layout/header.php';
           <div class="container-fluid px-4">
             <h1 class="mt-4">Dashboard</h1>
             <ol class="breadcrumb mb-4">
-              <li class="breadcrumb-item active">Dashboard</li>
+              <li class="breadcrumb-item active">
+                <?php 
+                  if (isset($_GET['status'])) {
+                    if ($_GET['status']=="login") {
+                      echo "<div class='alert alert-primary' role='alert'>Anda Telah Login</div>";
+                    }
+                  }
+                ?>
+              </li>
             </ol>
             <div class="row">
               <div class="col-xl-3 col-md-6">
