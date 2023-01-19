@@ -5,17 +5,13 @@ include '../layout/header.php';
         <main>
           <div class="container-fluid px-4">
             <h1 class="mt-4">Dashboard</h1>
-            <ol class="breadcrumb mb-4">
-              <li class="breadcrumb-item active">
                 <?php 
-                  if (isset($_GET['status'])) {
-                    if ($_GET['status']=="login") {
-                      echo "<div class='alert alert-primary' role='alert'>Anda Telah Login</div>";
+                  if (isset($_GET['pesan'])) {
+                    if ($_GET['pesan']=="login") {
+                      echo "<div class='alert alert-primary' role='alert'><marquee><b>Anda berhasil login</b></marquee></div>";
                     }
                   }
                 ?>
-              </li>
-            </ol>
             <div class="row">
               <div class="col-xl-3 col-md-6">
                 <div class="card bg-primary text-white mb-4">
