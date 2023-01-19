@@ -33,6 +33,8 @@ include "koneksi.php";
                                         echo "<div class='alert alert-info text-center my-2' role='alert'><b>Anda telah Logout</b></div>"; 
                                     } elseif ($_GET['pesan']=="gagal") {
                                         echo "<div class='alert alert-warning text-center my-2' role='alert'><b>Silahkan Login terlebih dahulu !</b></div>";
+                                    } elseif ($_GET['pesan']=="belumlogin") {
+                                        echo "<div class='alert alert-danger text-center my-2' role='alert'><b>Anda belum login</b></div>";
                                     }
                                 }
 
