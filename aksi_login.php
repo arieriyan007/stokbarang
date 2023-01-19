@@ -16,6 +16,6 @@ if ($hitung > 0) {
 
     header("location:admin/index.php?pesan=login");
 } else {
-    header("location:login.php?status=gagal");
+    header("location:login.php?pesan=gagal");
 }
 ?>
